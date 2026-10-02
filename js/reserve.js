@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const watches = Aurum.watches();
-  const tomorrow = new Date(Date.now() + 86400000).toISOString().slice(0, 10);
-  const lastDay = new Date(Date.now() + 90 * 86400000).toISOString().slice(0, 10);
+  const tomorrow = daysFromToday(1);
+  const lastDay = daysFromToday(90);
   const selected = Aurum.param('watch') || '';
 
   root.innerHTML = `

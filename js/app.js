@@ -132,7 +132,7 @@ const Aurum = (() => {
       phone,
       city: city.trim(),
       password,
-      createdAt: new Date().toISOString().slice(0, 10),
+      createdAt: daysFromToday(0),
     };
     write('users', [...list, created]);
     write('currentUser', withoutPassword(created));
@@ -224,7 +224,7 @@ const Aurum = (() => {
       time,
       note: note.trim(),
       status: 'Pending',
-      createdAt: new Date().toISOString().slice(0, 10),
+      createdAt: daysFromToday(0),
     };
     write('reservations', [reservation, ...list]);
     return { ok: true, reservation };

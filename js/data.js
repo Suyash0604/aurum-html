@@ -1,7 +1,14 @@
 // Initial data. It is copied into localStorage the first time the site is
 // opened; after that the stored data is used, so admin changes are kept.
 
-const daysFromToday = (n) => new Date(Date.now() + n * 86400000).toISOString().slice(0, 10);
+// Dates are written as YYYY-MM-DD in the visitor's own time zone.
+const localDate = (date) =>
+  date.getFullYear() + '-' + String(date.getMonth() + 1).padStart(2, '0') + '-' + String(date.getDate()).padStart(2, '0');
+const daysFromToday = (n) => {
+  const date = new Date();
+  date.setDate(date.getDate() + n);
+  return localDate(date);
+};
 
 const SEED_WATCHES = [
   {
