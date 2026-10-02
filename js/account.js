@@ -137,5 +137,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Keep the open tab in step with the address bar (links such as admin.html#watches).
+  window.addEventListener('hashchange', () => {
+    const key = location.hash.slice(1);
+    if (TABS.some(([name]) => name === key) && key !== tab) {
+      tab = key;
+      render();
+    }
+  });
+
   render();
 });
