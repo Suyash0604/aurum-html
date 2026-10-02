@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create Account – Aurum</title>
+<meta name="description" content="Aurum – fine mechanical watches. Explore the collection and book a private viewing at our Pune boutique.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0d12'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='20' fill='%23c8a45d' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="register">
+<header id="site-header" class="site-header"></header>
+<main>
+<section class="section"><div class="container auth-grid">
+    <div class="auth-side">
+      <p class="eyebrow">Aurum account</p>
+      <h1>Create your account</h1>
+      <p class="lead">It takes less than a minute and lets you book a private viewing.</p>
+      <ul class="check-list"><li>Book and manage private viewings</li><li>Save watches to your wishlist</li><li>See the status of every booking</li></ul>
+    </div>
+    <form class="card form" id="registerForm" novalidate>
+      <h2>Create account</h2>
+      <div class="form-grid">
+        <div class="field"><label for="rName">Full name</label><input id="rName" name="name" autocomplete="name"></div>
+        <div class="field"><label for="rEmail">Email</label><input id="rEmail" name="email" type="email" autocomplete="email"></div>
+        <div class="field"><label for="rPhone">Mobile number</label><input id="rPhone" name="phone" type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit number"></div>
+        <div class="field"><label for="rCity">City</label><input id="rCity" name="city" autocomplete="address-level2"></div>
+        <div class="field"><label for="rPassword">Password</label><input id="rPassword" name="password" type="password" autocomplete="new-password"></div>
+        <div class="field"><label for="rConfirm">Confirm password</label><input id="rConfirm" name="confirm" type="password" autocomplete="new-password"></div>
+      </div>
+      <p class="hint">Use at least 8 characters, with at least one letter and one number.</p>
+      <button class="btn btn-gold btn-block" type="submit">Create Account</button>
+      <p class="form-foot">Already have an account? <a href="login.html">Log in</a></p>
+    </form>
+</div></section>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

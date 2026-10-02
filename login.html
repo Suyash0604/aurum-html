@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log In – Aurum</title>
+<meta name="description" content="Aurum – fine mechanical watches. Explore the collection and book a private viewing at our Pune boutique.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0d12'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='20' fill='%23c8a45d' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+<header id="site-header" class="site-header"></header>
+<main>
+<section class="section"><div class="container auth-grid">
+    <div class="auth-side">
+      <p class="eyebrow">Aurum account</p>
+      <h1>Welcome back</h1>
+      <p class="lead">Log in to manage your bookings and wishlist.</p>
+      <ul class="check-list"><li>Book and manage private viewings</li><li>Save watches to your wishlist</li><li>See the status of every booking</li></ul>
+    </div>
+    <form class="card form" id="loginForm" novalidate>
+      <h2>Log in</h2>
+      <div class="field"><label for="lEmail">Email</label><input id="lEmail" name="email" type="email" autocomplete="email"></div>
+      <div class="field"><label for="lPassword">Password</label><input id="lPassword" name="password" type="password" autocomplete="current-password"></div>
+      <button class="btn btn-gold btn-block" type="submit">Log In</button>
+      <p class="form-foot">New to Aurum? <a href="register.html">Create an account</a></p>
+      <div class="demo-box">
+        <p class="small"><strong>Demo accounts</strong></p>
+        <div class="demo-row"><span>Customer: arjun@example.com / Arjun@2026</span><button type="button" class="btn btn-outline btn-sm" data-demo="arjun@example.com|Arjun@2026">Use</button></div>
+        <div class="demo-row"><span>Admin: admin@aurum.in / Aurum@Admin1</span><button type="button" class="btn btn-outline btn-sm" data-demo="admin@aurum.in|Aurum@Admin1">Use</button></div>
+        <p class="muted small">This is a demonstration. Accounts are stored only in your browser, so please do not use a real password.</p>
+      </div>
+    </form>
+</div></section>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
